@@ -16,6 +16,8 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 #EDIT SETUP IZIN
 clear
+sudo hostnamectl set-hostname Geo-Project
+clear
 if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
