@@ -68,5 +68,4 @@ listClients(){
 }
 listClients
 echo "-------------------------------";
-echo -e "Script By whytzy96"
 
