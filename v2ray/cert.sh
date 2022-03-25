@@ -34,5 +34,6 @@ systemctl stop v2ray@none
 systemctl start v2ray
 systemctl start v2ray@none
 echo Done
-sleep 0.5
+echo " Reboot 5 Sec"
+sleep 5
 reboot
