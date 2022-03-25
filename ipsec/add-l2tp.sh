@@ -63,6 +63,5 @@ IPsec PSK : myvpn
 Username  : $VPN_USER
 Password  : $VPN_PASSWORD
 Expired   : $exp
-Script By @whyzty96 
 —————————————————
 EOF
