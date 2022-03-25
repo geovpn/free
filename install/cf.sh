@@ -1,17 +1,13 @@
 #!/bin/bash
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
 clear
 apt install jq curl -y
-DOMAIN=myvpnid.xyz
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.myvpnid.xyz
-CF_ID=whytzy934@gmail.com
-CF_KEY=fc0aa1b94ae8532b73364eaeb9c9dfcb2e056
+DOMAIN=sumbawa.me
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
+SUB_DOMAIN=${sub}.sumbawa.me
+CF_ID=paoandest@gmail.com
+CF_KEY=1d158d0efc4eef787222cefff0b6d20981462
 set -euo pipefail
-IP=$(wget -qO- icanhazip.com);
+IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
