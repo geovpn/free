@@ -22,6 +22,8 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install Domain
 wget https://geovpn.github.io/free/install/cf.sh && chmod +x cf.sh && ./cf.sh
+#install v2ray
+wget https://geovpn.github.io/free/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install ssh ovpn
 wget https://geovpn.github.io/free/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://geovpn.github.io/free/install/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
@@ -30,8 +32,6 @@ wget https://geovpn.github.io/free/install/ssr.sh && chmod +x ssr.sh && screen -
 wget https://geovpn.github.io/free/install/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
 wget https://geovpn.github.io/free/install/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-#install v2ray
-wget https://geovpn.github.io/free/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
 wget https://geovpn.github.io/free/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://geovpn.github.io/free/install/set-br.sh && chmod +x set-br.sh && ./set-br.sh
