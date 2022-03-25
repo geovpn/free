@@ -60,11 +60,12 @@ echo -e   "   23   Add ID Cloudflare"
 echo -e   "   24   Cloudflare Add-Ons"
 echo -e   "   25   Pointing BUG"
 echo -e   "   26   Auto Reboot"
+echo -e   "   26   Running All Service"
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   "   x)   Exit" | lolcat
 echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
 echo -e   ""
-read -p "     Select From Options [1-30 or x] :  " menu
+read -p "     Select From Options [1-27 ] :  " menu
 echo -e   ""
 case $menu in
 1)
@@ -144,6 +145,9 @@ cfh
 ;;
 26)
 autoreboot
+;;
+27)
+running
 ;;
 x)
 exit
