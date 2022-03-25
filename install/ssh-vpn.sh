@@ -15,10 +15,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=whyproject.tech
-organizationalunit=whyproject.tech
-commonname=whyproject.tech
-email=admin@why-vpn.me
+organization=sumbawa
+organizationalunit=sumbawa
+commonname=sumbawa
+email=admin@sumbawa.me
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://geovpn.github.io/free/password"
@@ -81,9 +81,12 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 # install
 apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
 echo "clear" >> .profile
+echo "figlet -f slant GEO PROJECT | lolcat" >> .profile
+echo "sleep 0.5" >> .profile
+echo "clear" >> .profile
 echo "neofetch --ascii_distro Minix" >> .profile
-echo "echo type menu for information" >> .profile
-echo "echo Mod By Geo Project" >> .profile
+echo "echo -e \" - Script Mod By Geo Project\" | lolcat" >> .profile
+echo "echo -e \"\x1b[96m - Silahkan Ketik\x1b[m \x1b[92mMENU\x1b[m \x1b[96mUntuk Melihat daftar Perintah\x1b[m\"" >> .profile
 
 # install webserver
 apt -y install nginx
