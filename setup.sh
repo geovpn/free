@@ -69,7 +69,7 @@ echo -e "$green         Installing AutoScript GEO        $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 #install Domain
-wget https://geovpn.github.io/free/install/cf.sh && chmod +x cf.sh && ./cf.sh
+#wget https://geovpn.github.io/free/install/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
 wget https://geovpn.github.io/free/install/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install ssh ovpn
