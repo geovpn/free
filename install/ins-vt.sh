@@ -19,11 +19,15 @@ touch /etc/trojan/akun.conf
 wget https://geovpn.github.io/free/v2ray/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
-mkdir /root/.acme.sh
-curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
-chmod +x /root/.acme.sh/acme.sh
-/root/.acme.sh/acme.sh --issue -d $domain --standalone --webroot "/home/vps/public_html/" -k ec-256 --force
-/root/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
+mkdir -p /root/.acme.sh >/dev/null 2>&1
+sleep 1
+if [ -f "/etc/v2ray/domain" ]; then
+echo -e "[ ${green}INFO$NC ] Current domain for acme : $domain"
+else
+echo -e "[ ${green}INFO$NC ] Getting acme for cert"
+curl https://get.acme.sh | sh -s email=my@example.com
+/root/.acme.sh/acme.sh --issue -d $domain --debug --standalone --keylength ec-256
+#/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 service squid start
 uuid=$(cat /proc/sys/kernel/random/uuid)
 cat> /etc/v2ray/config.json << END
