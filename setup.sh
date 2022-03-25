@@ -176,8 +176,6 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "------------------Script Created By geo-----------------" | tee -a log-install.txt
 echo ""
-echo " Reboot 10 Sec"
-sleep 10
 rm -f setup.sh
-reboot
+certv2ray
 
