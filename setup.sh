@@ -7,19 +7,65 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
+Blink='\e[5m'
+yell='\e[33m'
+lgreen='\e[92m'
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-clear
-sudo hostnamectl set-hostname Geo-Project
+MYIP=$(wget -qO- ipinfo.io/ip);
+#EDIT SETUP IZIN
 clear
 if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
+clear
+echo ""  
+echo -e "$yell $Blink                Premium Server Script          $NC"
+echo -e "$yell $Blink     '-------------------------------------------------------' $NC"
+echo "" 
+echo -e "$green   ...........................................................$NC"
+echo ''
+echo -e "$green                   Telegram:$NC $red@sampiiiiu               $NC"
+echo -e "$green                 Scrript Version:$NC $red 1.0                $NC"
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo -e "$green                  Proses akan mulai dalam 5 detik!              $NC"
+echo -e "$green   ...........................................................$NC"
+sleep 5
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green    Sila Masukkan DOMAIN, Jika TIADA KLIK Enter $NC"
+echo -e "$green   =============================================$NC"
+mkdir /etc/v2ray
 mkdir /var/lib/premium-script;
-echo "IP=" >> /var/lib/premium-script/ipvps.conf
+read -p " Hostname / Domain: " host
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /root/domain
+echo "$host" >> /etc/v2ray/domain
+echo "V1.0" >> /home/version
+echo "@sampiiiiu" >> /home/contact
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green               Sila Tunggu sebentar             $NC"
+echo -e "$green    Process Update & Upgrade Sedang Dijalankan  $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
+apt-get update && apt-get upgrade -y && update-grub -y
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green          Process Update&Upgrade Selesai        $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
+clear
+echo -e "$green   =============================================$NC"
+echo -e "$green         Installing AutoScript GEO        $NC"
+echo -e "$green   =============================================$NC"
+sleep 2
 #install Domain
 wget https://geovpn.github.io/free/install/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
