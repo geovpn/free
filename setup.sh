@@ -53,19 +53,19 @@ echo "V1.0" >> /home/version
 echo "@sampiiiiu" >> /home/contact
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green               Sila Tunggu sebentar             $NC"
-echo -e "$green    Process Update & Upgrade Sedang Dijalankan  $NC"
+echo -e "$green               Silahkan Tunggu sebentar             $NC"
+echo -e "$green    Process Update & Upgrade Sedang Berjalan  $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 apt-get update && apt-get upgrade -y && update-grub -y
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green          Process Update&Upgrade Selesai        $NC"
+echo -e "$green          Process Update & Upgrade Selesai        $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green         Installing AutoScript GEO        $NC"
+echo -e "$green         Installing AutoScript By GEO        $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 #install Domain
@@ -108,7 +108,7 @@ rm -f /root/lolcat.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=http://why-vpn.me
+Documentation=http://sampiiiiu
 
 [Service]
 Type=oneshot
