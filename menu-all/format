@@ -1,0 +1,43 @@
+#!/bin/bash
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+MYIP=$(wget -qO- ifconfig.me/ip);
+echo "Checking VPS"
+clear
+echo -e ""
+echo -e "\e[1;32m═════════════════════════════════════════" | lolcat
+echo -e "             Bengkel VpS  " 
+echo -e "\e[1;32m═════════════════════════════════════════" | lolcat
+echo -e " 1   Block Torrent"
+echo -e " 2   Edit Banner Messege"
+echo -e " 3   Delete Akun Expired"
+echo -e " 4  Ganti Password VPS"
+echo -e ""
+echo -e "\e[1;32m══════════════════════════════════════════" | lolcat
+echo -e " x)   MENU"
+echo -e "\e[1;32m══════════════════════════════════════════" | lolcat
+echo -e ""
+read -p "     Please Input Number  [1-4 or x] :  "  ambe
+echo -e ""
+case $ambe in
+1)
+antitorrent
+;;
+2)
+editsm
+;;
+3)
+user-delete-expired
+;;
+4)
+user-password
+;;
+x)
+exit
+;;
+*)
+clear
+menu
+;;
+esac
