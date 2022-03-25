@@ -41,7 +41,7 @@ echo -e "$green   ...........................................................$NC
 sleep 5
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green    Sila Masukkan DOMAIN, Jika TIADA KLIK Enter $NC"
+echo -e "$green    Silahkan Masukkan DOMAIN, Jika TIADA KLIK Enter $NC"
 echo -e "$green   =============================================$NC"
 mkdir /etc/v2ray
 mkdir /var/lib/premium-script;
@@ -174,12 +174,7 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : whytzy96"  | tee -a log-install.txt
-echo "   - Telegram                : T.me/@whytzy96"  | tee -a log-install.txt
-echo "   - Instagram               : @whyy_store"  | tee -a log-install.txt
-echo "   - Whatsapp                : 0859102641946"  | tee -a log-install.txt
-echo "   - Facebook                : https://www.facebook.com/why" | tee -a log-install.txt
-echo "------------------Script Created By Why-----------------" | tee -a log-install.txt
+echo "------------------Script Created By geo-----------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 10 Sec"
 sleep 10
