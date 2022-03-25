@@ -35,4 +35,4 @@ systemctl start v2ray
 systemctl start v2ray@none
 echo Done
 sleep 0.5
-clear 
+reboot
