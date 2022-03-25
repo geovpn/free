@@ -3,16 +3,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-IZIN=$( curl https://raw.githubusercontent.com/project-vps/ip-server/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Permission Accepted...${NC}"
-else
-echo -e "${red}Permission Denied!${NC}";
-echo "Please Contact Admin"
-echo "Telegram t.me/whytzy96"
-rm -f setup.sh
-exit 0
-fi
+clear
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
@@ -76,5 +67,4 @@ echo -e "OpenVPN : UDP 2200 http://$IP:81/client-udp-$ovpn2.ovpn"
 echo -e "OpenVPN : SSL 442 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "—————————————————"
 echo -e "Expired   : $exp"
-echo -e "Auto Script By @whytzy96"
 echo -e ""
