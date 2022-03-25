@@ -243,6 +243,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O add-host "https://geovpn.github.io/free/add-host.sh"
 wget -O about "https://geovpn.github.io/free/about.sh"
+wget -O running "https://geovpn.github.io/free/running.sh"
 wget -O menu "https://geovpn.github.io/free/menu-all/menu.sh"
 wget -O usernew "https://geovpn.github.io/free/usernew.sh"
 wget -O trial "https://geovpn.github.io/free/trial.sh"
@@ -287,6 +288,7 @@ wget -O v2raay "https://geovpn.github.io/free/menu-all/v2raay.sh"
 wget -O ssh "https://geovpn.github.io/free/menu-all/ssh.sh"
 wget -O sstpp "https://geovpn.github.io/free/menu-all/sstpp.sh"
 wget -O ssssr "https://geovpn.github.io/free/menu-all/ssssr.sh"
+chmod +x running
 chmod +x add-host
 chmod +x script-info
 chmod +x menu
