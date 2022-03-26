@@ -65,7 +65,7 @@ echo -e "$green   =============================================$NC"
 sleep 2
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green         Installing AutoScript By GEO        $NC"
+echo -e "$green         Installing AutoScript Recode GEO        $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 #install Domain
@@ -173,8 +173,7 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "------------------Script Created By geo-----------------" | tee -a log-install.txt
+echo "============-Autoscript Premium-=============" | tee -a log-install.txt
 echo ""
 rm -f setup.sh
 certv2ray
