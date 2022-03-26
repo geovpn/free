@@ -41,7 +41,7 @@ echo -e "$green   ...........................................................$NC
 sleep 5
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green    Silahkan Masukkan DOMAIN, Jika TIADA KLIK Enter $NC"
+echo -e "$green    Silahkan Masukkan DOMAIN, PENTING !!! $NC"
 echo -e "$green   =============================================$NC"
 mkdir /etc/v2ray
 mkdir /var/lib/premium-script;
