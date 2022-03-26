@@ -65,7 +65,7 @@ echo -e "$green   =============================================$NC"
 sleep 2
 clear
 echo -e "$green   =============================================$NC"
-echo -e "$green         Installing AutoScript Recode GEO        $NC"
+echo -e "$green         Installing AutoScript Premium       $NC"
 echo -e "$green   =============================================$NC"
 sleep 2
 #install Domain
