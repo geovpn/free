@@ -177,4 +177,3 @@ echo "============-Autoscript Premium-=============" | tee -a log-install.txt
 echo ""
 rm -f setup.sh
 certv2ray
-
